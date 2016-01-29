@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de grados</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<!--
+
+    <!-- Versión compilada y comprimida del CSS de Bootstrap -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+
+    <!-- Tema opcional -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+
+    <!-- Versión compilada y comprimida del JavaScript de Bootstrap -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+</head>
+<body ng-app="myApp" ng-controller="myController">
+<h1>Conversor de grados</h1>
+
+<p>Celcius a Farenheit</p>
+<input type="text" ng-model="cel"> {{ aFarenheit() | number }}
+
+<p>Farenheit a Celcius</p>
+<input type="text" ng-model="far"> {{ aCelcius() | number }}
+
+
+<!-- Modules -->
+<script src="app.js"></script>
+<!-- Controllers -->
+<script src="controller.js"></script>
+
+</body>
+</html>
